@@ -1,19 +1,30 @@
-let celsius = 28
-let fahrenheit = 10
+let celsius = document.querySelector("#id-celsius")
+let fahrenheit = document.querySelector("#id-fahrenheit")
+let buttonC = document.querySelector(".button-c")
+let buttonF = document.querySelector(".button-f")
+
+console.log(celsius);
+console.log(fahrenheit);
 
 function celsiusParaFahrenheit () {
-    let valorFahrenheit = (celsius * 9/5) + 32
+    let valorFahrenheit = (celsius.value * 9/5) + 32
     let temperaturaFahrenheit = valorFahrenheit.toFixed(2)
     console.log("A temperatura em Fahrenheit é: " + temperaturaFahrenheit + "ºF");
 }
-celsiusParaFahrenheit()
 
 function fahrenheitParaCelsius () {
-    let valorCelsius = (fahrenheit - 32) * 5/9
+    let valorCelsius = (fahrenheit.value - 32) * 5/9
     let temperaturaCelsius = valorCelsius.toFixed(2)
     console.log("A temperatura em Celsius é: " + temperaturaCelsius + "ºC");
 }
-fahrenheitParaCelsius()
+
+buttonC.addEventListener("click", () => {
+    celsiusParaFahrenheit();
+});
+
+buttonF.addEventListener("click", () => {
+    fahrenheitParaCelsius();
+});
 
 // celsius para Fahrenheit
 // (celsius * 9/5) + 32

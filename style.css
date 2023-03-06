@@ -55,3 +55,9 @@ body {
 .button:active {
     background-color: #155786;
 }
+
+.fraseC,
+.fraseF {
+    display: block;
+    font-size: 20px;
+}

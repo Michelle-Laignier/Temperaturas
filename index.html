@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Conversor de temperatura</title>
 </head>
 <body>
-    <section>
-        <h1>Conversor de temperatura</h1>
-        <label for="id-celsius">Celsius</label>
-        <input type="number" id="id-celsius" class="celsius" placeholder="0ºC">
-        <button class="button-c">Converter</button>
+    <section class="section">
+        <h1 class="titulo">Conversor de temperatura</h1>
+        <div class="div">
+            <label for="id-celsius" class="label">Celsius</label>
+            <input type="number" id="id-celsius" class="celsius input" placeholder="0ºC">
+            <button class="button-c button">Converter</button>
+        </div>
 
-        <label for="id-fahrenheit">Fahrenheit</label>
-        <input type="number" id="id-fahrenheit" class="fahrenheit" placeholder="0ºF">
-        <button class="button-f">Converter</button>
+        <div class="div">
+            <label for="id-fahrenheit" class="label">Fahrenheit</label>
+            <input type="number" id="id-fahrenheit" class="fahrenheit input" placeholder="0ºF">
+            <button class="button-f button">Converter</button>
+        </div>
     </section>
     <script src="./temperaturas.js"></script>
 </body>
